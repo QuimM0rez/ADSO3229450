@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS - Calculadora</title>
+    <link rel="stylesheet" href="./micss.css">
+</head>
+<body>
+
+    <div class="seccion">
+        <h2>Primer Botón (Función Geo)</h2>
+        <label for="txtDato">Ingresa un dato:</label>
+        <input type="text" id="txtDato" placeholder="Ej: Hola mundo">
+        <br>
+        <button onclick="fnGeo()">Primer botón</button>
+    </div>
+
+    <div class="seccion">
+        <h2>Calculadora Básica (Función Rider)</h2>
+        <label for="txtNum1">Primer Número:</label>
+        <input type="number" id="txtNum1" placeholder="0">
+        <br>
+        
+        <label for="operacion">Operación:</label>
+        <select id="operacion">
+            <option value="sumar">Suma (+)</option>
+            <option value="restar">Resta (-)</option>
+            <option value="multiplicar">Multiplicación (*)</option>
+            <option value="dividir">División (/)</option>
+            <option value="modulo">Módulo/Residuo (%)</option>
+        </select>
+        <br>
+
+        <label>Segundo Número (Clase):</label>
+        <input type="number" class="txtNum2" placeholder="0">
+        <br>
+        
+        <button onclick="fnCalculaRider()">Calcular resultado</button>
+    </div>
+
+    <div class="seccion">
+        <h2>Resultado en Párrafo</h2>
+        <p id="pfosalida">El resultado aparecerá aquí...</p>
+    </div>
+
+    <script src="miscript.js"></script>
+</body>
+</html>
