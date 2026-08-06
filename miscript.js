@@ -1,7 +1,7 @@
 // Función para el primer botón
 function fnGeo() {
     let dato = document.getElementById("#txtDato").value;
-    alert("Dato ingresado: " + dato);
+    alert("Mi Dato ingresado: " + dato);
     
     // Se pasa la variable 'dato' a las funciones externas
     fuctionSalidaParrafo(dato);
